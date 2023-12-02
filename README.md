@@ -1,8 +1,9 @@
-#静的サイトスターター
+# 静的サイト制作スターター
+html/css(scss)/js
 
-##scssコンパイル
-VScodeのLive Sass Compilerで行う
-.vscodeでassets/css内にコンパイルされるよう設定
+## scssコンパイル
+- VScodeのLive Sass Compilerで行う
+- .vscodeでassets/css内にコンパイルされるよう設定済み
 
-##追加済みライブラリ
+## 追加済みライブラリ
 Swiper.js
