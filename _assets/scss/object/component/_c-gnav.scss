@@ -1,0 +1,14 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+/* c-gnav*/
+.c-gnav{
+
+    &__list{
+        display: flex;
+    }
+
+    &__link{
+        display: block;
+    }
+} 

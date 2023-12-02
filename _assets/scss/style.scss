@@ -1,0 +1,25 @@
+//-------foundation
+ @use "foundation/reset";
+ @use "foundation/base";
+ 
+ //------layout
+ @use "layout/l-body";
+ @use "layout/l-header";
+ @use "layout/l-footer";
+ @use "layout/l-inner";
+ 
+ //------object
+ // Component
+ @use "object/component/c-site";
+ @use "object/component/c-gnav";
+ @use "object/component/c-btnMenu";
+ @use "object/component/c-ttl";
+ @use "object/component/c-btn";
+ 
+//-------Project
+//  @use "object/project/p-mv";
+ 
+ // Utility
+ @use "object/utility/u-align";
+ @use "object/utility/u-txt";
+ @use "object/utility/u-display";

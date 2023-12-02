@@ -1,0 +1,14 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+/* c-site */
+.c-site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    &__main {
+        flex: 1;
+    }
+}
+  

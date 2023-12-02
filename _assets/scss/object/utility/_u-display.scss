@@ -1,0 +1,23 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+/* u-display */
+.u-display{
+
+    &--pcNone{
+        display: none !important;
+        @include tab{
+            display: block !important;
+        }
+    }
+
+    &--spNone{
+        @include tab{
+            display: none !important;
+        }
+    }
+    
+    &--inlineBlock{
+        display: inline-block;
+    }
+}

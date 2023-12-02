@@ -1,0 +1,57 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+/* c-btnMenu*/
+.c-btnMenu{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    span{
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      position: relative;
+      &::before,&::after{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      &::before{
+        top: .8rem;
+      }
+      &::after{
+        top: -.8rem;
+      }
+    }
+}
+
+/* btnMenu_isOnがついた時のスタイル */
+.c-btnMenu{
+
+    &.btnMenu_isOn{
+
+        span{
+            background-color: transparent;
+            
+            &::before,&::after{
+                top: 0;
+            }
+            &::before{
+                transform: rotate(45deg);
+            }
+            &::after{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

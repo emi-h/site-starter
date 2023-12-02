@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="l-body" id="body">
+  <div class="c-site">
+    <!-- header -->
+    <header class="l-header">
+      <div class="l-header__inner">
+        <div class="l-header__logo">
+          <h1>
+            <a href="#"><img src="assets/images/logo.svg" alt="" width="" height=""></a>
+          </h1>
+        </div>
+        <div class="l-header__gnav" id="js-menu">
+          <nav class="c-gnav">
+            <ul class="c-gnav__list">
+              <li class="c-gnav__item">
+                <a class="c-gnav__link" href="#">▼▼メニュー</a>
+              </li>
+              <li class="c-gnav__item">
+                <a class="c-gnav__link" href="#">▼▼メニュー</a>
+              </li>
+              <li class="c-gnav__item">
+                <a class="c-gnav__link" href="#">▼▼メニュー</a>
+              </li>
+              <li class="c-gnav__item">
+                <a class="c-gnav__link" href="#">▼▼メニュー</a>
+              </li>
+              <li class="c-gnav__item">
+                <a class="c-gnav__link" href="#">▼▼メニュー</a>
+              </li>
+              <li class="c-gnav__item">
+                <a class="c-gnav__link" href="#">▼▼メニュー</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="l-header__btn">
+          <button type="button" class="c-btnMenu" id="js-btnMenu" aria-label="メニューを開く">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- mv -->
+    <section class="p-mv">
+      <h2 class="p-mv__copy">copy</h2>
+    </section>
+
+    <!-- main -->
+    <main class="c-site__main">
+      <section>
+        <div class="l-inner">
+          <h2 class="c-ttl">タイトル</h2>
+          <h3>サブタイトル</h3>
+          <p>本文</p>
+        </div>
+      </section>
+      <section class="">
+          <div class="l-inner">
+             <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>footer</footer>
+
+    <!-- pagetop -->
+    <a href="#top">ページトップへ</a>
+  </div>
+  <!-- /.c-site -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@use './setting' as s;
+@use './mixin' as *;
+
+/* base */
+html {
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+    // scroll-padding-top: 100px;
+
+    @include sp {//374px以下は画面幅に合わせてフォントサイズ変更
+        font-size: calc(10 / 375 * 100vw);
+    }
+}
+
+body {
+    font-family: s.$font_family_default;
+    font-size: s.$font_size_default;
+    font-weight: s.$font_weight_default;
+    line-height: s.$line_height_default;
+    color: s.$txt_color_default;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

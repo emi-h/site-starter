@@ -1,0 +1,27 @@
+@use './setting' as s;
+
+// *------------------*
+// *  レスポンシブ定義
+// *------------------*
+@mixin tab {
+    @media screen and (max-width: s.$tab) {
+        @content;
+    }
+}
+
+@mixin sp-l {
+    @media screen and (max-width: s.$sp-l) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: s.$sp) {
+        @content;
+    }
+}
+@mixin responsive($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
