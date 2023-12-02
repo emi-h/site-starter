@@ -7,10 +7,6 @@
 
     // &__inner{}
 
-    &__btn {
-      display: none;
-    }
-
     &__gnav {
       @include tab {
         display: none;
@@ -20,8 +16,9 @@
         }
       }
     }
-
+    
     &__btn {
+      display: none;
       @include tab {
         display: block;
         position: absolute;
@@ -29,4 +26,5 @@
         right: 0;
       }
     }
+
 }

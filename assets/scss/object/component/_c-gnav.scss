@@ -6,6 +6,9 @@
 
     &__list{
         display: flex;
+        @include tab{
+            display: block;
+        }
     }
 
     &__link{
